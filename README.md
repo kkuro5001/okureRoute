@@ -1,9 +1,17 @@
-#　サーバーの起動方法
-cd frontend
-npm start
+# サーバーの起動方法
+cd backend
+venv\Scripts\Activate # 仮想環境を有効化
+cd ../app
+python main.py # Flaskサーバー起動(http://127.0.0.1:5000/api/hello)
 
-cd ../backend
-python app.py
+cd frontend
+npm start # React起動 (http://localhost:3000)
+
+# git branch関連
+git branch <ブランチ名> #ブランチの作成
+git checkout <ブランチ名> #ブランチの切り替え
+git branch -d <ブランチ名> #ブランチの削除
+
 
 # Gitで変更をpushする方法
 
